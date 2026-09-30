@@ -514,7 +514,7 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 18px;
 }
@@ -570,7 +570,30 @@ section {
     font-size: 17px;
     line-height: 1.4;
 
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+}
+
+.service-description {
+    color: #606060;
+
+    font-size: 15px;
+    line-height: 1.4;
+
+    margin-bottom: 0;
+}
+
+.service-deliverable {
+    display: block;
+
+    margin-top: 18px;
+    padding-top: 14px;
+
+    border-top: 1px solid #eee9f0;
+    margin-bottom: 6px;
+    color: #5b1a73;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 
