@@ -455,13 +455,59 @@ section {
 }
 
 .what-i-do__description {
-    max-width: 680px;
+    max-width: 760px;
 
     color: #606060;
 
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 17px;
+    line-height: 1.6;
 }
+
+
+/* Main USP */
+
+.what-i-do__usp {
+    margin: 0;
+
+    color: #333333;
+
+    font-size: 19px;
+    line-height: 1.55;
+}
+
+
+/* Important parts of the USP */
+
+.what-i-do__usp strong {
+    color: #5b1a73;
+
+    font-weight: 600;
+}
+
+
+/* Outcome statement */
+
+.what-i-do__outcome {
+    max-width: 700px;
+
+    margin: 20px 0 0;
+    padding-left: 18px;
+
+    color: #606060;
+
+    font-size: 16px;
+    line-height: 1.65;
+
+    border-left: 3px solid #d8c6df;
+}
+
+
+.what-i-do__outcome strong {
+    color: #333333;
+
+    font-weight: 600;
+}
+
 
 
 /* Services */
