@@ -914,242 +914,124 @@ section {
 
 
 
-/* =========================================
-   PROJECTS
-========================================= */
+/* ========================================= 
+PROJECTS 
+========================================= */ 
+.projects { 
+    padding: 6% 30px; 
+    background-color: #faf9fb; 
+} 
 
-.projects {
-    padding: 6% 30px;
-    background-color: #faf9fb;
-}
+.projects__label { 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto 35px; 
+} 
+.projects__container { 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+} 
+    
+.projects__heading { 
+    margin-bottom: 45px; 
+} 
 
-.projects__label {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 35px;
-}
+.projects__heading h2 { 
+    color: #111111; 
+    font-size: clamp(40px, 6vw, 45px); 
+    line-height: 1.02; 
+    letter-spacing: -2.5px; 
+} 
+        
+.projects__heading h2 span { 
+    color: #5b1a73; 
+} 
+/* Project Grid */ 
+.projects__grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+} 
+    
+.project { 
+    overflow: hidden; 
+    background-color: #ffffff; 
+    border: 1px solid #eee8f1; 
+    border-radius: 18px; 
+    transition: transform 0.3s ease, 
+    box-shadow 0.3s ease, 
+    border-color 0.3s ease; 
+} 
 
-.projects__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.project:hover { 
+    transform: translateY(-6px); 
+    border-color: #d8c6df; 
+    box-shadow: 0 18px 35px rgba(91, 26, 115, 0.08); 
+} 
 
-.projects__heading {
-    margin-bottom: 45px;
-}
-
-.projects__heading h2 {
-    color: #111111;
-    font-size: clamp(40px, 6vw, 45px);
-    line-height: 1.02;
-    letter-spacing: -2.5px;
-}
-
-.projects__heading h2 span {
-    color: #5b1a73;
-}
-
-
-/* =========================================
-   PROJECT GRID
-========================================= */
-
-.projects__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 35px;
-}
-
-
-/* =========================================
-   PROJECT CARD
-========================================= */
-
-.project {
-    display: grid;
-    grid-template-columns: 42% 58%;
-
-    overflow: hidden;
-
-    background-color: #ffffff;
-
-    border: 1px solid #eee8f1;
-    border-radius: 18px;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-
-    border-color: #d8c6df;
-
-    box-shadow: 0 18px 35px rgba(91, 26, 115, 0.08);
-}
-
-
-/* =========================================
-   PROJECT IMAGE
-========================================= */
-
-.project__image {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-    min-height: 400px;
-
-    overflow: hidden;
-
+/* Project Image */ 
+.project__image { 
+    position: relative; 
+    width: 100%; 
+    
+    overflow: hidden; 
     background-color: #f1edf3;
-}
+} 
 
-.project__image img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.5s ease;
-}
-
-.project:hover .project__image img {
-    transform: scale(1.03);
-}
-
-
-/* =========================================
-   PROJECT CONTENT
-========================================= */
-
-.project__content {
-    padding: 40px;
-}
-
-.project__content h3 {
-    color: #161616;
-
-    font-size: 28px;
-    line-height: 1.3;
-
-    margin-bottom: 18px;
-}
+.project__image img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+} 
+/* Project Content */ 
+.project__content { 
+    padding: 27px; 
+} 
+.project__content h3 { 
+    color: #161616; 
+    font-size: 28px; 
+    line-height: 1.3; 
+    margin-bottom: 15px; 
+} 
+ /* Description */ 
+.project__description { 
+    color: #626262; 
+    font-size: 15px; 
+    line-height: 1.6; 
+    margin-bottom: 0px; 
+}  
 
 
-/* =========================================
-   PROJECT TOOLS
-========================================= */
-
-.project__tools {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 7px;
-
-    margin-bottom: 18px;
-}
-
-.project__tools span {
-    padding: 5px 8px;
-
-    border-radius: 6px;
-
-    color: #5b1a73;
-
-    font-size: 14px;
-    font-weight: 500;
-}
-
-
-/* =========================================
-   PROJECT DESCRIPTION
-========================================= */
-
-.project__description {
-    color: #626262;
-
-    font-size: 15px;
-    line-height: 1.75;
-
-    margin-bottom: 0;
-}
-
+/* Important findings */
 .project__description strong {
     color: #5b1a73;
     font-weight: 600;
 }
 
+/* Investigation focus */
 .project__description span {
     color: #333333;
     font-weight: 500;
 }
 
-
-/* =========================================
-   PROJECT LINK
-========================================= */
-
-.project__link {
-    display: inline-flex;
-    align-items: center;
-
-    gap: 8px;
-
-    margin-top: 25px;
-
-    color: #5b1a73;
-
-    font-size: 14px;
-    font-weight: 700;
-
-    transition: gap 0.3s ease;
-}
-
-.project__link:hover {
-    gap: 13px;
+ /* Project Link */ 
+.project__link { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    margin-top: 20px; 
+    color: #5b1a73; 
+    font-size: 14px; 
+    font-weight: 700; 
+    transition: gap 0.3s ease; 
+} 
+.project__link:hover { 
+    gap: 13px; 
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
-@media (max-width: 768px) {
-
-    .projects {
-        padding: 70px 20px;
-    }
-
-    .projects__grid {
-        gap: 25px;
-    }
-
-    .project {
-        grid-template-columns: 1fr;
-    }
-
-    .project__image {
-        height: 260px;
-        min-height: auto;
-    }
-
-    .project__content {
-        padding: 25px;
-    }
-
-    .project__content h3 {
-        font-size: 24px;
-    }
-
-    .project__description {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-}
 
 
 /* =========================================
@@ -1601,6 +1483,11 @@ section {
         min-height: auto;
     }
 
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 
@@ -1737,6 +1624,8 @@ section {
         grid-template-columns: 1fr;
     }
 
+    
+
 
     /* Contact */
 
@@ -1768,6 +1657,9 @@ section {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    
+
 
 
     .services-grid {
@@ -1932,9 +1824,6 @@ section {
         font-size: 43px;
     }
 
-    .project__image {
-        height: 220px;
-    }
 
     .project__content {
         padding: 22px;
@@ -2004,7 +1893,7 @@ section {
         width: 210px;
         height: 210px;
     }
-
+    
     .workflow {
         grid-template-columns: 1fr 1fr;
     }
